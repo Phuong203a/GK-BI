@@ -1,0 +1,2997 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dataset_cleaned' inline='true' name='federated.0fqktcq0f2pul813ona2i16unxpf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset_cleaned' name='textscan.0smh6hh1bcc5ix12ht6a81chf3jd'>
+            <connection class='textscan' directory='D:/BI/midterm-dataset' filename='dataset_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0smh6hh1bcc5ix12ht6a81chf3jd' name='dataset_cleaned.csv' table='[dataset_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='_' ordinal='0' />
+            <column datatype='integer' name='id' ordinal='1' />
+            <column datatype='integer' name='id_by_category' ordinal='2' />
+            <column datatype='string' name='name' ordinal='3' />
+            <column datatype='string' name='main_category' ordinal='4' />
+            <column datatype='string' name='sub_category' ordinal='5' />
+            <column datatype='string' name='image' ordinal='6' />
+            <column datatype='string' name='link' ordinal='7' />
+            <column datatype='real' name='ratings' ordinal='8' />
+            <column datatype='real' name='no_of_ratings' ordinal='9' />
+            <column datatype='real' name='discount_price' ordinal='10' />
+            <column datatype='real' name='actual_price' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>_</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[_]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>_</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_by_category</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_by_category]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>id_by_category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>main_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[main_category]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>main_category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_category]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>sub_category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>image</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[image]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>image</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[link]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>link</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ratings]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>ratings</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_of_ratings</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[no_of_ratings]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>no_of_ratings</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>discount_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[discount_price]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>discount_price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actual_price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[actual_price]</local-name>
+            <parent-name>[dataset_cleaned.csv]</parent-name>
+            <remote-alias>actual_price</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Largested discount' datatype='real' name='[Calculation_4354980854547316736]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([actual_price])-([discount_price])' />
+      </column>
+      <column caption='Largest discount' datatype='real' name='[Calculation_4354980854559739905]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED : MAX ([discount_price])}' />
+      </column>
+      <column caption='dataset_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316]' role='measure' type='quantitative' />
+      <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+      <column caption='Discount Price' datatype='real' name='[discount_price]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Id By Category' datatype='integer' name='[id_by_category]' role='dimension' type='ordinal' />
+      <column caption='Image' datatype='string' name='[image]' role='dimension' type='nominal' />
+      <column caption='Link' datatype='string' name='[link]' role='dimension' type='nominal' />
+      <column caption='Main Category' datatype='string' name='[main_category]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+      <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+      <column caption='Sub Category' datatype='string' name='[sub_category]' role='dimension' type='nominal' />
+      <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_4354980854547316736]' derivation='Sum' name='[sum:Calculation_4354980854547316736:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[discount_price]' derivation='Sum' name='[sum:discount_price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:id:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>194625</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>498696</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>79513</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>398741</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>149488</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>261534</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>73594</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>73625</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>498799</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>310621</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0fqktcq0f2pul813ona2i16unxpf]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:Calculation_4354980854547316736:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Viet Nam&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dataset_cleaned.csv' id='dataset_cleaned.csv_E22D1354D558493ABEA98CAFCEAD9316'>
+            <properties context=''>
+              <relation connection='textscan.0smh6hh1bcc5ix12ht6a81chf3jd' name='dataset_cleaned.csv' table='[dataset_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='_' ordinal='0' />
+                  <column datatype='integer' name='id' ordinal='1' />
+                  <column datatype='integer' name='id_by_category' ordinal='2' />
+                  <column datatype='string' name='name' ordinal='3' />
+                  <column datatype='string' name='main_category' ordinal='4' />
+                  <column datatype='string' name='sub_category' ordinal='5' />
+                  <column datatype='string' name='image' ordinal='6' />
+                  <column datatype='string' name='link' ordinal='7' />
+                  <column datatype='real' name='ratings' ordinal='8' />
+                  <column datatype='real' name='no_of_ratings' ordinal='9' />
+                  <column datatype='real' name='discount_price' ordinal='10' />
+                  <column datatype='real' name='actual_price' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='10 cheapest product_ rating more than 4.0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([actual_price])' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([ratings]) &gt; 4.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='ASC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' value='91' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{CB5823E6-58AD-4876-97C1-6D7EEE566B1B}' />
+    </worksheet>
+    <worksheet name='10 most expensive product _ rating lower than 3.0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([actual_price])' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([ratings]) &lt; 3.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{B1131F78-D118-459F-B3AA-1FE63037ECFC}' />
+    </worksheet>
+    <worksheet name='100 cheapest product_ rating more than 4.0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='100' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([actual_price])' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([ratings]) &gt; 4.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' />
+          <filter class='quantitative' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' included-values='in-range'>
+            <min>4.0999999999999996</min>
+            <max>5.0</max>
+          </filter>
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{D9CEB915-33E0-4904-9D01-8870EF348426}' />
+    </worksheet>
+    <worksheet name='100 most expensive product _ rating lower than 3.0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='100' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([actual_price])' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([ratings]) &lt; 3.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' />
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{7E0E8954-7541-4B39-995D-C092C39D0833}' />
+    </worksheet>
+    <worksheet name='1000 cheapest product_ rating more than 4.0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='1000' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([actual_price])' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([ratings]) &gt; 4.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{ACB100BB-74BB-4EED-8F23-CF9ABD3C66FC}' />
+    </worksheet>
+    <worksheet name='1000 most expensive product _ rating lower than 3.0'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='1000' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([actual_price])' function='order' user:ui-marker='order'>
+                <groupfilter expression='SUM([ratings]) &lt; 3.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+                  <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>194625</bucket>
+              <bucket>498799</bucket>
+              <bucket>73594</bucket>
+              <bucket>79513</bucket>
+              <bucket>498696</bucket>
+              <bucket>73625</bucket>
+              <bucket>149488</bucket>
+              <bucket>310621</bucket>
+              <bucket>261534</bucket>
+              <bucket>398741</bucket>
+              <bucket>498534</bucket>
+              <bucket>509219</bucket>
+              <bucket>399639</bucket>
+              <bucket>399641</bucket>
+              <bucket>399625</bucket>
+              <bucket>195186</bucket>
+              <bucket>326654</bucket>
+              <bucket>443736</bucket>
+              <bucket>74103</bucket>
+              <bucket>406348</bucket>
+              <bucket>409100</bucket>
+              <bucket>409221</bucket>
+              <bucket>409860</bucket>
+              <bucket>410098</bucket>
+              <bucket>410350</bucket>
+              <bucket>399583</bucket>
+              <bucket>210398</bucket>
+              <bucket>509102</bucket>
+              <bucket>74</bucket>
+              <bucket>3253</bucket>
+              <bucket>3282</bucket>
+              <bucket>244285</bucket>
+              <bucket>341914</bucket>
+              <bucket>392</bucket>
+              <bucket>252387</bucket>
+              <bucket>398743</bucket>
+              <bucket>306</bucket>
+              <bucket>249696</bucket>
+              <bucket>498634</bucket>
+              <bucket>681</bucket>
+              <bucket>88</bucket>
+              <bucket>4615</bucket>
+              <bucket>244528</bucket>
+              <bucket>244545</bucket>
+              <bucket>342886</bucket>
+              <bucket>498739</bucket>
+              <bucket>268</bucket>
+              <bucket>248843</bucket>
+              <bucket>204296</bucket>
+              <bucket>398679</bucket>
+              <bucket>409807</bucket>
+              <bucket>398549</bucket>
+              <bucket>76995</bucket>
+              <bucket>210402</bucket>
+              <bucket>134</bucket>
+              <bucket>10220</bucket>
+              <bucket>245516</bucket>
+              <bucket>323465</bucket>
+              <bucket>407989</bucket>
+              <bucket>408101</bucket>
+              <bucket>408174</bucket>
+              <bucket>409057</bucket>
+              <bucket>684</bucket>
+              <bucket>195170</bucket>
+              <bucket>314668</bucket>
+              <bucket>687</bucket>
+              <bucket>313114</bucket>
+              <bucket>19996</bucket>
+              <bucket>195582</bucket>
+              <bucket>436</bucket>
+              <bucket>399580</bucket>
+              <bucket>408530</bucket>
+              <bucket>426</bucket>
+              <bucket>78610</bucket>
+              <bucket>509774</bucket>
+              <bucket>309</bucket>
+              <bucket>249770</bucket>
+              <bucket>409219</bucket>
+              <bucket>398733</bucket>
+              <bucket>20474</bucket>
+              <bucket>78384</bucket>
+              <bucket>311973</bucket>
+              <bucket>286</bucket>
+              <bucket>249181</bucket>
+              <bucket>472368</bucket>
+              <bucket>509088</bucket>
+              <bucket>49</bucket>
+              <bucket>2318</bucket>
+              <bucket>244105</bucket>
+              <bucket>341096</bucket>
+              <bucket>398692</bucket>
+              <bucket>440</bucket>
+              <bucket>203</bucket>
+              <bucket>247275</bucket>
+              <bucket>329020</bucket>
+              <bucket>509135</bucket>
+              <bucket>85063</bucket>
+              <bucket>508922</bucket>
+              <bucket>398580</bucket>
+              <bucket>430</bucket>
+              <bucket>78891</bucket>
+              <bucket>425</bucket>
+              <bucket>193348</bucket>
+              <bucket>688</bucket>
+              <bucket>196438</bucket>
+              <bucket>325211</bucket>
+              <bucket>79206</bucket>
+              <bucket>407173</bucket>
+              <bucket>407437</bucket>
+              <bucket>407499</bucket>
+              <bucket>407792</bucket>
+              <bucket>407912</bucket>
+              <bucket>408252</bucket>
+              <bucket>408714</bucket>
+              <bucket>408743</bucket>
+              <bucket>409596</bucket>
+              <bucket>410707</bucket>
+              <bucket>410708</bucket>
+              <bucket>410178</bucket>
+              <bucket>126</bucket>
+              <bucket>9709</bucket>
+              <bucket>245429</bucket>
+              <bucket>346846</bucket>
+              <bucket>203019</bucket>
+              <bucket>209471</bucket>
+              <bucket>407636</bucket>
+              <bucket>202835</bucket>
+              <bucket>411199</bucket>
+              <bucket>211972</bucket>
+              <bucket>458</bucket>
+              <bucket>78018</bucket>
+              <bucket>407011</bucket>
+              <bucket>409379</bucket>
+              <bucket>409963</bucket>
+              <bucket>408071</bucket>
+              <bucket>408081</bucket>
+              <bucket>407733</bucket>
+              <bucket>410672</bucket>
+              <bucket>411222</bucket>
+              <bucket>458468</bucket>
+              <bucket>209472</bucket>
+              <bucket>469878</bucket>
+              <bucket>469906</bucket>
+              <bucket>440622</bucket>
+              <bucket>499535</bucket>
+              <bucket>473651</bucket>
+              <bucket>471438</bucket>
+              <bucket>508902</bucket>
+              <bucket>409478</bucket>
+              <bucket>522460</bucket>
+              <bucket>461982</bucket>
+              <bucket>409664</bucket>
+              <bucket>498815</bucket>
+              <bucket>411121</bucket>
+              <bucket>509276</bucket>
+              <bucket>398712</bucket>
+              <bucket>499106</bucket>
+              <bucket>297</bucket>
+              <bucket>249529</bucket>
+              <bucket>248</bucket>
+              <bucket>248447</bucket>
+              <bucket>408857</bucket>
+              <bucket>509048</bucket>
+              <bucket>196412</bucket>
+              <bucket>509207</bucket>
+              <bucket>329711</bucket>
+              <bucket>77596</bucket>
+              <bucket>398731</bucket>
+              <bucket>195354</bucket>
+              <bucket>311505</bucket>
+              <bucket>410378</bucket>
+              <bucket>75697</bucket>
+              <bucket>261169</bucket>
+              <bucket>18201</bucket>
+              <bucket>80791</bucket>
+              <bucket>508812</bucket>
+              <bucket>74199</bucket>
+              <bucket>406370</bucket>
+              <bucket>3367</bucket>
+              <bucket>409944</bucket>
+              <bucket>410962</bucket>
+              <bucket>459510</bucket>
+              <bucket>85064</bucket>
+              <bucket>409246</bucket>
+              <bucket>411279</bucket>
+              <bucket>411060</bucket>
+              <bucket>79328</bucket>
+              <bucket>407197</bucket>
+              <bucket>407510</bucket>
+              <bucket>409992</bucket>
+              <bucket>246300</bucket>
+              <bucket>75442</bucket>
+              <bucket>406582</bucket>
+              <bucket>410237</bucket>
+              <bucket>78826</bucket>
+              <bucket>407121</bucket>
+              <bucket>408932</bucket>
+              <bucket>398407</bucket>
+              <bucket>473860</bucket>
+              <bucket>206005</bucket>
+              <bucket>85072</bucket>
+              <bucket>513770</bucket>
+              <bucket>201988</bucket>
+              <bucket>411282</bucket>
+              <bucket>158046</bucket>
+              <bucket>313607</bucket>
+              <bucket>320538</bucket>
+              <bucket>459803</bucket>
+              <bucket>472447</bucket>
+              <bucket>473334</bucket>
+              <bucket>473440</bucket>
+              <bucket>474517</bucket>
+              <bucket>95701</bucket>
+              <bucket>473944</bucket>
+              <bucket>408352</bucket>
+              <bucket>247077</bucket>
+              <bucket>252053</bucket>
+              <bucket>249487</bucket>
+              <bucket>474492</bucket>
+              <bucket>195524</bucket>
+              <bucket>69321</bucket>
+              <bucket>76390</bucket>
+              <bucket>77989</bucket>
+              <bucket>398703</bucket>
+              <bucket>406730</bucket>
+              <bucket>407008</bucket>
+              <bucket>411244</bucket>
+              <bucket>519847</bucket>
+              <bucket>407180</bucket>
+              <bucket>410208</bucket>
+              <bucket>398670</bucket>
+              <bucket>499330</bucket>
+              <bucket>517139</bucket>
+              <bucket>208719</bucket>
+              <bucket>125805</bucket>
+              <bucket>411049</bucket>
+              <bucket>74900</bucket>
+              <bucket>406490</bucket>
+              <bucket>3910</bucket>
+              <bucket>201822</bucket>
+              <bucket>247957</bucket>
+              <bucket>473853</bucket>
+              <bucket>407257</bucket>
+              <bucket>522065</bucket>
+              <bucket>311409</bucket>
+              <bucket>124981</bucket>
+              <bucket>509229</bucket>
+              <bucket>513475</bucket>
+              <bucket>500590</bucket>
+              <bucket>245785</bucket>
+              <bucket>348399</bucket>
+              <bucket>410569</bucket>
+              <bucket>476033</bucket>
+              <bucket>407372</bucket>
+              <bucket>409733</bucket>
+              <bucket>470725</bucket>
+              <bucket>473641</bucket>
+              <bucket>472562</bucket>
+              <bucket>472642</bucket>
+              <bucket>408678</bucket>
+              <bucket>519949</bucket>
+              <bucket>409719</bucket>
+              <bucket>410339</bucket>
+              <bucket>408131</bucket>
+              <bucket>398571</bucket>
+              <bucket>410149</bucket>
+              <bucket>67756</bucket>
+              <bucket>195485</bucket>
+              <bucket>411172</bucket>
+              <bucket>500303</bucket>
+              <bucket>201963</bucket>
+              <bucket>509084</bucket>
+              <bucket>195866</bucket>
+              <bucket>161017</bucket>
+              <bucket>313462</bucket>
+              <bucket>329659</bucket>
+              <bucket>407706</bucket>
+              <bucket>509220</bucket>
+              <bucket>73265</bucket>
+              <bucket>246240</bucket>
+              <bucket>407294</bucket>
+              <bucket>407609</bucket>
+              <bucket>502508</bucket>
+              <bucket>4841</bucket>
+              <bucket>76831</bucket>
+              <bucket>77495</bucket>
+              <bucket>343059</bucket>
+              <bucket>406932</bucket>
+              <bucket>242648</bucket>
+              <bucket>409550</bucket>
+              <bucket>48015</bucket>
+              <bucket>193761</bucket>
+              <bucket>509083</bucket>
+              <bucket>253783</bucket>
+              <bucket>410567</bucket>
+              <bucket>398758</bucket>
+              <bucket>509087</bucket>
+              <bucket>196445</bucket>
+              <bucket>443185</bucket>
+              <bucket>195144</bucket>
+              <bucket>313926</bucket>
+              <bucket>195273</bucket>
+              <bucket>473891</bucket>
+              <bucket>85050</bucket>
+              <bucket>328735</bucket>
+              <bucket>410207</bucket>
+              <bucket>410542</bucket>
+              <bucket>252129</bucket>
+              <bucket>410338</bucket>
+              <bucket>201021</bucket>
+              <bucket>200762</bucket>
+              <bucket>125703</bucket>
+              <bucket>328391</bucket>
+              <bucket>520012</bucket>
+              <bucket>398394</bucket>
+              <bucket>407385</bucket>
+              <bucket>407524</bucket>
+              <bucket>408497</bucket>
+              <bucket>408978</bucket>
+              <bucket>409212</bucket>
+              <bucket>409504</bucket>
+              <bucket>410744</bucket>
+              <bucket>478734</bucket>
+              <bucket>513857</bucket>
+              <bucket>498776</bucket>
+              <bucket>227932</bucket>
+              <bucket>473640</bucket>
+              <bucket>196386</bucket>
+              <bucket>407300</bucket>
+              <bucket>76342</bucket>
+              <bucket>406716</bucket>
+              <bucket>208267</bucket>
+              <bucket>168387</bucket>
+              <bucket>65852</bucket>
+              <bucket>78185</bucket>
+              <bucket>195758</bucket>
+              <bucket>460374</bucket>
+              <bucket>473906</bucket>
+              <bucket>6805</bucket>
+              <bucket>251753</bucket>
+              <bucket>398165</bucket>
+              <bucket>408153</bucket>
+              <bucket>409227</bucket>
+              <bucket>409748</bucket>
+              <bucket>442613</bucket>
+              <bucket>511779</bucket>
+              <bucket>513922</bucket>
+              <bucket>186989</bucket>
+              <bucket>16281</bucket>
+              <bucket>19466</bucket>
+              <bucket>476903</bucket>
+              <bucket>328972</bucket>
+              <bucket>206016</bucket>
+              <bucket>202023</bucket>
+              <bucket>473747</bucket>
+              <bucket>405509</bucket>
+              <bucket>85020</bucket>
+              <bucket>47193</bucket>
+              <bucket>155793</bucket>
+              <bucket>250348</bucket>
+              <bucket>312755</bucket>
+              <bucket>408444</bucket>
+              <bucket>410214</bucket>
+              <bucket>442564</bucket>
+              <bucket>181098</bucket>
+              <bucket>252641</bucket>
+              <bucket>253172</bucket>
+              <bucket>407841</bucket>
+              <bucket>407906</bucket>
+              <bucket>410816</bucket>
+              <bucket>389827</bucket>
+              <bucket>10171</bucket>
+              <bucket>245509</bucket>
+              <bucket>249226</bucket>
+              <bucket>347210</bucket>
+              <bucket>398505</bucket>
+              <bucket>399573</bucket>
+              <bucket>398220</bucket>
+              <bucket>10163</bucket>
+              <bucket>347207</bucket>
+              <bucket>519886</bucket>
+              <bucket>195632</bucket>
+              <bucket>519306</bucket>
+              <bucket>73254</bucket>
+              <bucket>406216</bucket>
+              <bucket>208944</bucket>
+              <bucket>245669</bucket>
+              <bucket>347892</bucket>
+              <bucket>409170</bucket>
+              <bucket>409844</bucket>
+              <bucket>212345</bucket>
+              <bucket>472210</bucket>
+              <bucket>471678</bucket>
+              <bucket>443634</bucket>
+              <bucket>218</bucket>
+              <bucket>292</bucket>
+              <bucket>332</bucket>
+              <bucket>345</bucket>
+              <bucket>417</bucket>
+              <bucket>422</bucket>
+              <bucket>427</bucket>
+              <bucket>454</bucket>
+              <bucket>455</bucket>
+              <bucket>651</bucket>
+              <bucket>3101</bucket>
+              <bucket>3550</bucket>
+              <bucket>5405</bucket>
+              <bucket>5487</bucket>
+              <bucket>6062</bucket>
+              <bucket>6749</bucket>
+              <bucket>8313</bucket>
+              <bucket>8746</bucket>
+              <bucket>9563</bucket>
+              <bucket>17895</bucket>
+              <bucket>35629</bucket>
+              <bucket>35821</bucket>
+              <bucket>47829</bucket>
+              <bucket>48483</bucket>
+              <bucket>52514</bucket>
+              <bucket>53204</bucket>
+              <bucket>56074</bucket>
+              <bucket>56831</bucket>
+              <bucket>56864</bucket>
+              <bucket>67341</bucket>
+              <bucket>68657</bucket>
+              <bucket>69629</bucket>
+              <bucket>71670</bucket>
+              <bucket>77462</bucket>
+              <bucket>79064</bucket>
+              <bucket>79936</bucket>
+              <bucket>81105</bucket>
+              <bucket>81138</bucket>
+              <bucket>81196</bucket>
+              <bucket>81298</bucket>
+              <bucket>82128</bucket>
+              <bucket>82967</bucket>
+              <bucket>83079</bucket>
+              <bucket>83113</bucket>
+              <bucket>83314</bucket>
+              <bucket>83404</bucket>
+              <bucket>83444</bucket>
+              <bucket>83653</bucket>
+              <bucket>84267</bucket>
+              <bucket>84784</bucket>
+              <bucket>85074</bucket>
+              <bucket>86138</bucket>
+              <bucket>86731</bucket>
+              <bucket>87240</bucket>
+              <bucket>88757</bucket>
+              <bucket>89177</bucket>
+              <bucket>89486</bucket>
+              <bucket>91111</bucket>
+              <bucket>91288</bucket>
+              <bucket>91714</bucket>
+              <bucket>92860</bucket>
+              <bucket>92922</bucket>
+              <bucket>93435</bucket>
+              <bucket>93717</bucket>
+              <bucket>94597</bucket>
+              <bucket>95036</bucket>
+              <bucket>95073</bucket>
+              <bucket>95206</bucket>
+              <bucket>95309</bucket>
+              <bucket>96287</bucket>
+              <bucket>96553</bucket>
+              <bucket>96838</bucket>
+              <bucket>96872</bucket>
+              <bucket>96944</bucket>
+              <bucket>97399</bucket>
+              <bucket>97725</bucket>
+              <bucket>98354</bucket>
+              <bucket>98666</bucket>
+              <bucket>99009</bucket>
+              <bucket>99091</bucket>
+              <bucket>99136</bucket>
+              <bucket>99298</bucket>
+              <bucket>99611</bucket>
+              <bucket>101387</bucket>
+              <bucket>102141</bucket>
+              <bucket>102144</bucket>
+              <bucket>103440</bucket>
+              <bucket>106075</bucket>
+              <bucket>114091</bucket>
+              <bucket>115666</bucket>
+              <bucket>118593</bucket>
+              <bucket>121114</bucket>
+              <bucket>125858</bucket>
+              <bucket>126686</bucket>
+              <bucket>134002</bucket>
+              <bucket>134657</bucket>
+              <bucket>139527</bucket>
+              <bucket>139895</bucket>
+              <bucket>141681</bucket>
+              <bucket>142551</bucket>
+              <bucket>142615</bucket>
+              <bucket>144057</bucket>
+              <bucket>146094</bucket>
+              <bucket>146508</bucket>
+              <bucket>146943</bucket>
+              <bucket>149018</bucket>
+              <bucket>155644</bucket>
+              <bucket>163347</bucket>
+              <bucket>164127</bucket>
+              <bucket>165060</bucket>
+              <bucket>168923</bucket>
+              <bucket>169456</bucket>
+              <bucket>169539</bucket>
+              <bucket>171160</bucket>
+              <bucket>172450</bucket>
+              <bucket>172521</bucket>
+              <bucket>172869</bucket>
+              <bucket>173094</bucket>
+              <bucket>175598</bucket>
+              <bucket>175759</bucket>
+              <bucket>175860</bucket>
+              <bucket>176699</bucket>
+              <bucket>177738</bucket>
+              <bucket>178294</bucket>
+              <bucket>179669</bucket>
+              <bucket>179788</bucket>
+              <bucket>180046</bucket>
+              <bucket>180239</bucket>
+              <bucket>180261</bucket>
+              <bucket>180402</bucket>
+              <bucket>180458</bucket>
+              <bucket>190184</bucket>
+              <bucket>191405</bucket>
+              <bucket>193195</bucket>
+              <bucket>194445</bucket>
+              <bucket>195333</bucket>
+              <bucket>195412</bucket>
+              <bucket>195525</bucket>
+              <bucket>195532</bucket>
+              <bucket>195539</bucket>
+              <bucket>195639</bucket>
+              <bucket>195671</bucket>
+              <bucket>195757</bucket>
+              <bucket>195830</bucket>
+              <bucket>195843</bucket>
+              <bucket>195864</bucket>
+              <bucket>195873</bucket>
+              <bucket>195934</bucket>
+              <bucket>196012</bucket>
+              <bucket>196044</bucket>
+              <bucket>196046</bucket>
+              <bucket>196058</bucket>
+              <bucket>196063</bucket>
+              <bucket>196103</bucket>
+              <bucket>196105</bucket>
+              <bucket>196118</bucket>
+              <bucket>196141</bucket>
+              <bucket>196230</bucket>
+              <bucket>196257</bucket>
+              <bucket>196340</bucket>
+              <bucket>196388</bucket>
+              <bucket>196390</bucket>
+              <bucket>196403</bucket>
+              <bucket>196404</bucket>
+              <bucket>196433</bucket>
+              <bucket>197702</bucket>
+              <bucket>197706</bucket>
+              <bucket>197731</bucket>
+              <bucket>197882</bucket>
+              <bucket>198113</bucket>
+              <bucket>198289</bucket>
+              <bucket>198299</bucket>
+              <bucket>198441</bucket>
+              <bucket>198509</bucket>
+              <bucket>199747</bucket>
+              <bucket>199748</bucket>
+              <bucket>200029</bucket>
+              <bucket>200030</bucket>
+              <bucket>205820</bucket>
+              <bucket>205839</bucket>
+              <bucket>205864</bucket>
+              <bucket>205865</bucket>
+              <bucket>205871</bucket>
+              <bucket>205883</bucket>
+              <bucket>206242</bucket>
+              <bucket>210177</bucket>
+              <bucket>210623</bucket>
+              <bucket>210735</bucket>
+              <bucket>211710</bucket>
+              <bucket>211717</bucket>
+              <bucket>211784</bucket>
+              <bucket>212552</bucket>
+              <bucket>213136</bucket>
+              <bucket>213433</bucket>
+              <bucket>213847</bucket>
+              <bucket>213876</bucket>
+              <bucket>217525</bucket>
+              <bucket>220085</bucket>
+              <bucket>221918</bucket>
+              <bucket>222221</bucket>
+              <bucket>223425</bucket>
+              <bucket>224725</bucket>
+              <bucket>225253</bucket>
+              <bucket>225315</bucket>
+              <bucket>226424</bucket>
+              <bucket>227537</bucket>
+              <bucket>228335</bucket>
+              <bucket>228441</bucket>
+              <bucket>228577</bucket>
+              <bucket>228617</bucket>
+              <bucket>228698</bucket>
+              <bucket>228996</bucket>
+              <bucket>229317</bucket>
+              <bucket>230874</bucket>
+              <bucket>231028</bucket>
+              <bucket>231230</bucket>
+              <bucket>231573</bucket>
+              <bucket>232965</bucket>
+              <bucket>233072</bucket>
+              <bucket>234095</bucket>
+              <bucket>234251</bucket>
+              <bucket>234811</bucket>
+              <bucket>235008</bucket>
+              <bucket>235961</bucket>
+              <bucket>236506</bucket>
+              <bucket>236633</bucket>
+              <bucket>236944</bucket>
+              <bucket>237175</bucket>
+              <bucket>237521</bucket>
+              <bucket>237976</bucket>
+              <bucket>238115</bucket>
+              <bucket>238470</bucket>
+              <bucket>239060</bucket>
+              <bucket>239429</bucket>
+              <bucket>239502</bucket>
+              <bucket>239663</bucket>
+              <bucket>239696</bucket>
+              <bucket>240154</bucket>
+              <bucket>240379</bucket>
+              <bucket>240404</bucket>
+              <bucket>240555</bucket>
+              <bucket>240565</bucket>
+              <bucket>241152</bucket>
+              <bucket>241539</bucket>
+              <bucket>241558</bucket>
+              <bucket>241999</bucket>
+              <bucket>242219</bucket>
+              <bucket>242234</bucket>
+              <bucket>242269</bucket>
+              <bucket>242434</bucket>
+              <bucket>245177</bucket>
+              <bucket>245662</bucket>
+              <bucket>246521</bucket>
+              <bucket>246544</bucket>
+              <bucket>247042</bucket>
+              <bucket>247284</bucket>
+              <bucket>247581</bucket>
+              <bucket>247587</bucket>
+              <bucket>247639</bucket>
+              <bucket>247930</bucket>
+              <bucket>248531</bucket>
+              <bucket>248704</bucket>
+              <bucket>249419</bucket>
+              <bucket>249448</bucket>
+              <bucket>249541</bucket>
+              <bucket>250186</bucket>
+              <bucket>250230</bucket>
+              <bucket>250262</bucket>
+              <bucket>250412</bucket>
+              <bucket>250417</bucket>
+              <bucket>250452</bucket>
+              <bucket>250764</bucket>
+              <bucket>250781</bucket>
+              <bucket>251071</bucket>
+              <bucket>251152</bucket>
+              <bucket>251228</bucket>
+              <bucket>251246</bucket>
+              <bucket>251405</bucket>
+              <bucket>251560</bucket>
+              <bucket>251570</bucket>
+              <bucket>251799</bucket>
+              <bucket>251902</bucket>
+              <bucket>251980</bucket>
+              <bucket>252083</bucket>
+              <bucket>252258</bucket>
+              <bucket>252370</bucket>
+              <bucket>252389</bucket>
+              <bucket>252394</bucket>
+              <bucket>252469</bucket>
+              <bucket>252565</bucket>
+              <bucket>252615</bucket>
+              <bucket>252687</bucket>
+              <bucket>252694</bucket>
+              <bucket>252751</bucket>
+              <bucket>252766</bucket>
+              <bucket>252779</bucket>
+              <bucket>252815</bucket>
+              <bucket>252816</bucket>
+              <bucket>252849</bucket>
+              <bucket>252961</bucket>
+              <bucket>253016</bucket>
+              <bucket>253177</bucket>
+              <bucket>253183</bucket>
+              <bucket>253242</bucket>
+              <bucket>253243</bucket>
+              <bucket>253302</bucket>
+              <bucket>253385</bucket>
+              <bucket>261847</bucket>
+              <bucket>263247</bucket>
+              <bucket>263297</bucket>
+              <bucket>263888</bucket>
+              <bucket>265960</bucket>
+              <bucket>268956</bucket>
+              <bucket>269330</bucket>
+              <bucket>270616</bucket>
+              <bucket>274741</bucket>
+              <bucket>274759</bucket>
+              <bucket>277916</bucket>
+              <bucket>279048</bucket>
+              <bucket>279226</bucket>
+              <bucket>279313</bucket>
+              <bucket>280127</bucket>
+              <bucket>283550</bucket>
+              <bucket>283713</bucket>
+              <bucket>283994</bucket>
+              <bucket>284465</bucket>
+              <bucket>284466</bucket>
+              <bucket>285603</bucket>
+              <bucket>289765</bucket>
+              <bucket>291098</bucket>
+              <bucket>292375</bucket>
+              <bucket>292384</bucket>
+              <bucket>293506</bucket>
+              <bucket>293922</bucket>
+              <bucket>294192</bucket>
+              <bucket>294722</bucket>
+              <bucket>296689</bucket>
+              <bucket>297448</bucket>
+              <bucket>297665</bucket>
+              <bucket>297899</bucket>
+              <bucket>297911</bucket>
+              <bucket>297982</bucket>
+              <bucket>298031</bucket>
+              <bucket>298219</bucket>
+              <bucket>298621</bucket>
+              <bucket>298634</bucket>
+              <bucket>299309</bucket>
+              <bucket>299481</bucket>
+              <bucket>299684</bucket>
+              <bucket>299907</bucket>
+              <bucket>300037</bucket>
+              <bucket>300296</bucket>
+              <bucket>300331</bucket>
+              <bucket>300478</bucket>
+              <bucket>300721</bucket>
+              <bucket>312680</bucket>
+              <bucket>313222</bucket>
+              <bucket>315149</bucket>
+              <bucket>315338</bucket>
+              <bucket>315345</bucket>
+              <bucket>316436</bucket>
+              <bucket>318801</bucket>
+              <bucket>324654</bucket>
+              <bucket>324817</bucket>
+              <bucket>325334</bucket>
+              <bucket>326273</bucket>
+              <bucket>327809</bucket>
+              <bucket>328428</bucket>
+              <bucket>329316</bucket>
+              <bucket>341697</bucket>
+              <bucket>342037</bucket>
+              <bucket>343571</bucket>
+              <bucket>344044</bucket>
+              <bucket>345767</bucket>
+              <bucket>346103</bucket>
+              <bucket>346736</bucket>
+              <bucket>347857</bucket>
+              <bucket>349361</bucket>
+              <bucket>350687</bucket>
+              <bucket>351304</bucket>
+              <bucket>356941</bucket>
+              <bucket>363050</bucket>
+              <bucket>363795</bucket>
+              <bucket>365502</bucket>
+              <bucket>371454</bucket>
+              <bucket>371576</bucket>
+              <bucket>383272</bucket>
+              <bucket>384693</bucket>
+              <bucket>387156</bucket>
+              <bucket>387216</bucket>
+              <bucket>388142</bucket>
+              <bucket>388146</bucket>
+              <bucket>388352</bucket>
+              <bucket>391360</bucket>
+              <bucket>392186</bucket>
+              <bucket>392225</bucket>
+              <bucket>395466</bucket>
+              <bucket>395648</bucket>
+              <bucket>397152</bucket>
+              <bucket>397227</bucket>
+              <bucket>397230</bucket>
+              <bucket>398400</bucket>
+              <bucket>398495</bucket>
+              <bucket>398647</bucket>
+              <bucket>398769</bucket>
+              <bucket>398770</bucket>
+              <bucket>398786</bucket>
+              <bucket>398790</bucket>
+              <bucket>399581</bucket>
+              <bucket>399582</bucket>
+              <bucket>400182</bucket>
+              <bucket>400186</bucket>
+              <bucket>400190</bucket>
+              <bucket>403866</bucket>
+              <bucket>404371</bucket>
+              <bucket>405341</bucket>
+              <bucket>405947</bucket>
+              <bucket>406925</bucket>
+              <bucket>407406</bucket>
+              <bucket>408773</bucket>
+              <bucket>408816</bucket>
+              <bucket>409032</bucket>
+              <bucket>409138</bucket>
+              <bucket>409180</bucket>
+              <bucket>409247</bucket>
+              <bucket>409377</bucket>
+              <bucket>409485</bucket>
+              <bucket>409577</bucket>
+              <bucket>409586</bucket>
+              <bucket>409628</bucket>
+              <bucket>409629</bucket>
+              <bucket>409741</bucket>
+              <bucket>409744</bucket>
+              <bucket>409747</bucket>
+              <bucket>409933</bucket>
+              <bucket>409958</bucket>
+              <bucket>410048</bucket>
+              <bucket>410217</bucket>
+              <bucket>410262</bucket>
+              <bucket>410333</bucket>
+              <bucket>410435</bucket>
+              <bucket>410803</bucket>
+              <bucket>410880</bucket>
+              <bucket>410907</bucket>
+              <bucket>410982</bucket>
+              <bucket>410986</bucket>
+              <bucket>410989</bucket>
+              <bucket>411191</bucket>
+              <bucket>411201</bucket>
+              <bucket>411242</bucket>
+              <bucket>411243</bucket>
+              <bucket>411268</bucket>
+              <bucket>411285</bucket>
+              <bucket>411339</bucket>
+              <bucket>416350</bucket>
+              <bucket>418191</bucket>
+              <bucket>418283</bucket>
+              <bucket>419622</bucket>
+              <bucket>419749</bucket>
+              <bucket>421604</bucket>
+              <bucket>422180</bucket>
+              <bucket>422223</bucket>
+              <bucket>422671</bucket>
+              <bucket>422680</bucket>
+              <bucket>422735</bucket>
+              <bucket>422849</bucket>
+              <bucket>423476</bucket>
+              <bucket>424781</bucket>
+              <bucket>425985</bucket>
+              <bucket>426325</bucket>
+              <bucket>426440</bucket>
+              <bucket>426464</bucket>
+              <bucket>426550</bucket>
+              <bucket>427786</bucket>
+              <bucket>427797</bucket>
+              <bucket>427972</bucket>
+              <bucket>428050</bucket>
+              <bucket>428398</bucket>
+              <bucket>428428</bucket>
+              <bucket>428551</bucket>
+              <bucket>428582</bucket>
+              <bucket>428607</bucket>
+              <bucket>428922</bucket>
+              <bucket>428944</bucket>
+              <bucket>428949</bucket>
+              <bucket>429086</bucket>
+              <bucket>429097</bucket>
+              <bucket>429282</bucket>
+              <bucket>429578</bucket>
+              <bucket>430063</bucket>
+              <bucket>430309</bucket>
+              <bucket>430395</bucket>
+              <bucket>430596</bucket>
+              <bucket>430837</bucket>
+              <bucket>430957</bucket>
+              <bucket>431158</bucket>
+              <bucket>431316</bucket>
+              <bucket>431930</bucket>
+              <bucket>432937</bucket>
+              <bucket>432951</bucket>
+              <bucket>433658</bucket>
+              <bucket>433735</bucket>
+              <bucket>433753</bucket>
+              <bucket>433756</bucket>
+              <bucket>433767</bucket>
+              <bucket>433798</bucket>
+              <bucket>434061</bucket>
+              <bucket>434278</bucket>
+              <bucket>434569</bucket>
+              <bucket>434620</bucket>
+              <bucket>434738</bucket>
+              <bucket>435215</bucket>
+              <bucket>435244</bucket>
+              <bucket>435620</bucket>
+              <bucket>436345</bucket>
+              <bucket>436619</bucket>
+              <bucket>439518</bucket>
+              <bucket>440047</bucket>
+              <bucket>440139</bucket>
+              <bucket>441324</bucket>
+              <bucket>441375</bucket>
+              <bucket>441859</bucket>
+              <bucket>442264</bucket>
+              <bucket>442351</bucket>
+              <bucket>442436</bucket>
+              <bucket>442533</bucket>
+              <bucket>442540</bucket>
+              <bucket>442553</bucket>
+              <bucket>442569</bucket>
+              <bucket>442592</bucket>
+              <bucket>442645</bucket>
+              <bucket>442706</bucket>
+              <bucket>442864</bucket>
+              <bucket>442871</bucket>
+              <bucket>443038</bucket>
+              <bucket>443089</bucket>
+              <bucket>443103</bucket>
+              <bucket>443346</bucket>
+              <bucket>443484</bucket>
+              <bucket>443582</bucket>
+              <bucket>443583</bucket>
+              <bucket>443593</bucket>
+              <bucket>443594</bucket>
+              <bucket>443598</bucket>
+              <bucket>443599</bucket>
+              <bucket>443601</bucket>
+              <bucket>443635</bucket>
+              <bucket>443636</bucket>
+              <bucket>443642</bucket>
+              <bucket>443652</bucket>
+              <bucket>443657</bucket>
+              <bucket>449426</bucket>
+              <bucket>450168</bucket>
+              <bucket>451412</bucket>
+              <bucket>451597</bucket>
+              <bucket>451858</bucket>
+              <bucket>452253</bucket>
+              <bucket>453039</bucket>
+              <bucket>454393</bucket>
+              <bucket>454445</bucket>
+              <bucket>455962</bucket>
+              <bucket>456486</bucket>
+              <bucket>457051</bucket>
+              <bucket>457268</bucket>
+              <bucket>457485</bucket>
+              <bucket>458176</bucket>
+              <bucket>458469</bucket>
+              <bucket>458709</bucket>
+              <bucket>458731</bucket>
+              <bucket>458873</bucket>
+              <bucket>459185</bucket>
+              <bucket>459624</bucket>
+              <bucket>459730</bucket>
+              <bucket>459911</bucket>
+              <bucket>460296</bucket>
+              <bucket>460433</bucket>
+              <bucket>461447</bucket>
+              <bucket>462972</bucket>
+              <bucket>463606</bucket>
+              <bucket>464673</bucket>
+              <bucket>465141</bucket>
+              <bucket>465847</bucket>
+              <bucket>465876</bucket>
+              <bucket>466604</bucket>
+              <bucket>475517</bucket>
+              <bucket>475545</bucket>
+              <bucket>475814</bucket>
+              <bucket>477042</bucket>
+              <bucket>478512</bucket>
+              <bucket>479879</bucket>
+              <bucket>480146</bucket>
+              <bucket>481512</bucket>
+              <bucket>483975</bucket>
+              <bucket>484563</bucket>
+              <bucket>488599</bucket>
+              <bucket>489924</bucket>
+              <bucket>491163</bucket>
+              <bucket>492840</bucket>
+              <bucket>493981</bucket>
+              <bucket>494729</bucket>
+              <bucket>494759</bucket>
+              <bucket>495607</bucket>
+              <bucket>495676</bucket>
+              <bucket>496482</bucket>
+              <bucket>496595</bucket>
+              <bucket>496637</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='17' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' />
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{8FC46717-3B3E-415E-A846-CF1327F71CE8}' />
+    </worksheet>
+    <worksheet name='Best-selling product Top 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{EEFD3090-0C32-4FF6-B3E6-A190454240E0}' />
+    </worksheet>
+    <worksheet name='Best-selling product Top 100'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='100' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' value='19' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{B0B528F9-2F6D-4271-9702-52B93506B820}' />
+    </worksheet>
+    <worksheet name='Best-selling product Top 1000'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='1000' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{44F1B57B-284C-4C47-BE27-B9955EB343B7}' />
+    </worksheet>
+    <worksheet name='Best-selling product Top 10000'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='10000' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' field-type='quantitative' max='657421.55615630292' min='-6721.1747344651994' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{4AAC3F13-39C5-48FB-B3A4-F70DB23EA499}' />
+    </worksheet>
+    <worksheet name='Largest discount price product '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Largest discount' datatype='real' name='[Calculation_4354980854559739905]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{ FIXED : MAX ([discount_price])}' />
+            </column>
+            <column caption='Discount Price' datatype='real' name='[discount_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_4354980854559739905]' derivation='Sum' name='[sum:Calculation_4354980854559739905:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:Calculation_4354980854559739905:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{255870C9-9F18-4BEA-B413-C1A501B96548}' />
+    </worksheet>
+    <worksheet name='Largested discount price product '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Largested discount' datatype='real' name='[Calculation_4354980854547316736]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([actual_price])-([discount_price])' />
+            </column>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Discount Price' datatype='real' name='[discount_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_4354980854547316736]' derivation='Sum' name='[sum:Calculation_4354980854547316736:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[discount_price]' derivation='Sum' name='[sum:discount_price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:Calculation_4354980854547316736:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter function='level-members' level='[none:id:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='DESC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:Calculation_4354980854547316736:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0fqktcq0f2pul813ona2i16unxpf].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{84337B36-96C2-4121-919D-0A5950BEF3A8}' />
+    </worksheet>
+    <worksheet name='Relationship_1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Discount Price' datatype='real' name='[discount_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column caption='Ratings' datatype='real' name='[ratings]' role='measure' type='quantitative' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[discount_price]' derivation='Sum' name='[sum:discount_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ratings]' derivation='Sum' name='[sum:ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' field-type='quantitative' max='5.2718932443703075' min='0.0' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' field-type='quantitative' max='10281653183.390648' min='-2740516639.0483828' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]' field-type='quantitative' max='1342908.989619625' min='-92910.635693155666' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' field-type='quantitative' max='633371.65511800116' min='-43823.610872063109' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1203' />
+                <format attr='maxwidth' value='1203' />
+                <format attr='minheight' value='354' />
+                <format attr='maxheight' value='354' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1203' />
+                <format attr='maxwidth' value='1203' />
+                <format attr='minheight' value='354' />
+                <format attr='maxheight' value='354' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk] + ([federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk] + [federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]))</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]</cols>
+      </table>
+      <simple-id uuid='{5B0CB755-5C08-4530-8664-6D4FECB17919}' />
+    </worksheet>
+    <worksheet name='Relationship_3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Discount Price' datatype='real' name='[discount_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[discount_price]' derivation='Sum' name='[sum:discount_price:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]' num-steps='3' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]' />
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]</cols>
+      </table>
+      <simple-id uuid='{FAA5CA95-2D67-4747-A266-8AE7C5E6A615}' />
+    </worksheet>
+    <worksheet name='Relatioship_2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Actual Price' datatype='real' name='[actual_price]' role='measure' type='quantitative' />
+            <column caption='Discount Price' datatype='real' name='[discount_price]' role='measure' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[actual_price]' derivation='Sum' name='[sum:actual_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[discount_price]' derivation='Sum' name='[sum:discount_price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]' num-steps='3' palette='red_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='889' />
+                <format attr='maxwidth' value='889' />
+                <format attr='minheight' value='354' />
+                <format attr='maxheight' value='354' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk] + [federated.0fqktcq0f2pul813ona2i16unxpf].[sum:actual_price:qk])</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</cols>
+      </table>
+      <simple-id uuid='{F922D941-75F5-4EB2-80DE-18E3DAE828C7}' />
+    </worksheet>
+    <worksheet name='Worst-selling product Bottom 10'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='ASC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{84224771-A06F-4498-931B-52BEC34EE6FD}' />
+    </worksheet>
+    <worksheet name='Worst-selling product Bottom 100'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='100' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='ASC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{992E0551-1171-4C1E-B168-B3CEF5ABB2AE}' />
+    </worksheet>
+    <worksheet name='Worst-selling product Bottom 1000'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='1000' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='ASC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{82A4A1A5-A87E-4F2C-AD57-1D4E10B31410}' />
+    </worksheet>
+    <worksheet name='Worst-selling product Bottom 10000'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dataset_cleaned' name='federated.0fqktcq0f2pul813ona2i16unxpf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0fqktcq0f2pul813ona2i16unxpf'>
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column caption='No Of Ratings' datatype='real' name='[no_of_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[no_of_ratings]' derivation='Sum' name='[sum:no_of_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]'>
+            <groupfilter count='10000' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([no_of_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:id:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' direction='ASC' using='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]' />
+          <slices>
+            <column>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:no_of_ratings:qk]</rows>
+        <cols>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</cols>
+      </table>
+      <simple-id uuid='{31C87275-5BB8-452D-88A3-181E9F580D6C}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Best-selling product Top 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3E206785-2E03-4894-970E-93E0007ABB24}' />
+    </window>
+    <window class='worksheet' name='Best-selling product Top 100'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D629BFBA-57BA-4266-AABC-4F229F2C9E86}' />
+    </window>
+    <window class='worksheet' name='Best-selling product Top 1000'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{ABC54B95-E23A-4AB0-97FF-21570609434F}' />
+    </window>
+    <window class='worksheet' name='Best-selling product Top 10000'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='205'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{1D7462C0-71A5-48DF-BD79-C2D53C169836}' />
+    </window>
+    <window class='worksheet' name='Worst-selling product Bottom 10'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{31461738-5645-43B8-A7C5-D0CCA80F78AE}' />
+    </window>
+    <window class='worksheet' name='Worst-selling product Bottom 100'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BCEA0B33-BB28-4BFF-A4FF-AEDC6B732E5E}' />
+    </window>
+    <window class='worksheet' name='Worst-selling product Bottom 1000'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EA7B626B-99F1-46CD-B8CE-55D3B18A1EE8}' />
+    </window>
+    <window class='worksheet' name='Worst-selling product Bottom 10000'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='263'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1F833975-9D32-427F-98EE-1FC5C5324951}' />
+    </window>
+    <window class='worksheet' name='Relationship_1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='240'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{2E3B78D4-2D42-43F4-8D87-A2A016522100}' />
+    </window>
+    <window class='worksheet' name='Relatioship_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D258AAB5-F6C3-4BF4-80ED-77EE01A25CBD}' />
+    </window>
+    <window class='worksheet' name='Relationship_3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='2' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:discount_price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D1584077-CCC1-4CAC-97EB-9D6B824E9FC5}' />
+    </window>
+    <window class='worksheet' name='10 most expensive product _ rating lower than 3.0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='212'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='3' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{13211F8E-2C8E-4062-8E13-05165C8FA76C}' />
+    </window>
+    <window class='worksheet' name='100 most expensive product _ rating lower than 3.0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='197'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='1' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4FB2D69D-579F-4EBE-BCD0-BACA9449CCD0}' />
+    </window>
+    <window class='worksheet' name='1000 most expensive product _ rating lower than 3.0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='229'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='1' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{47D19D42-6041-461B-8408-9D39ABE4492C}' />
+    </window>
+    <window class='worksheet' name='10 cheapest product_ rating more than 4.0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='3' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BB4C991E-FFCF-4438-A8DF-9232CDB6ED41}' />
+    </window>
+    <window class='worksheet' name='100 cheapest product_ rating more than 4.0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='typeinlist' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='1' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{03D23B2A-C1B2-4ABA-97CE-B214CE181E21}' />
+    </window>
+    <window class='worksheet' name='1000 cheapest product_ rating more than 4.0'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='181'>
+            <card mode='typeinlist' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]' type='filter' />
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+            <card pane-specification-id='1' param='[federated.0fqktcq0f2pul813ona2i16unxpf].[sum:ratings:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{3660B3A1-5B87-438C-9E36-1FB2C1CF302C}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Largest discount price product '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0fqktcq0f2pul813ona2i16unxpf].[none:id:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{01E4F2CB-5AE9-4865-81BB-DEB474DFC6A8}' />
+    </window>
+    <window class='worksheet' name='Largested discount price product '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card AVG='true' KURTOSIS='false' MAX='true' MEDIAN='true' MIN='true' QUART1='false' QUART3='false' SKEWNESS='false' STDEV='false' SUM='true' type='summary' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B43B3C5-7DAA-400B-AEA7-E5D7EEC582F5}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Largest discount price product ' width='164'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
